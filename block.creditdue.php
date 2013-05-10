@@ -1,4 +1,7 @@
-<!-- Creditsdue:  To modify this template, copy it from the plugin directory to your current theme directory. -->
+<?php // Creditsdue block:  To modify this template, copy it from the plugin directory to your current theme directory.
+ 	$theme_credits = $content->theme_credits;
+	$plugin_credits = $content->plugin_credits;
+?>
 <div class="credits">
 	<h3>Theme</h3>
 		<ul id="theme_credits">
@@ -8,10 +11,8 @@
 	<h3>Plugins</h3>
 		<ul id="plugin_credits">
 
- 			<?php foreach ($plugin_credits as $plugin) { ?>
+<?php foreach ( $plugin_credits as $plugin ) { ?>
 			<li><?php echo "<a href='" . $plugin->info->url . "'>" . $plugin->info->name . "</a> version " . 	$plugin->info->version .  " by <a href='" . $plugin->info->authorurl . "'>" . $plugin->info->author . "</a>" ?></li>
-
-<?php } ?>
-
+<?php 	} ?>
 		</ul>
 </div>

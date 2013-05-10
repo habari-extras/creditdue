@@ -2,10 +2,12 @@
 <pluggable type="plugin">
     <name>Credit Due</name>
     <license url="http://www.apache.org/licenses/LICENSE-2.0.html">Apache License 2.0</license>
-    <author url="http://habariproject.org/">Habari Community</author>
-    <version>0.2</version>
+    <author url="http://habariproject.org/">The Habari Community</author>
+    <version>0.3</version>
     <url>http://habariproject.org/</url>
     <description><![CDATA[Allows for output of information for active themes and plugins.]]></description>
     <copyright>2009</copyright>
+	<guid>FB0B8460-38F2-11DD-AE16-0800200C9A66</guid>
+	<help><value><![CDATA[<p>To use, add a new "creditdue" block, or add <code>&lt;?php echo $theme->show_credits(); ?&gt;</code> in your theme.</p><p>To customize the output template, copy creditdue.php or block.creditdue.php to your theme's directory</p>]]></value></help>
 </pluggable>
  
